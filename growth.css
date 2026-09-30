@@ -1,0 +1,18 @@
+.gx-pay{background:#0d1420;color:#e8eef7;font-size:.9rem}.gx-pay-in{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;justify-content:center;padding:.9rem 1rem}
+.gx-pay span{background:rgba(255,255,255,.08);padding:.25rem .7rem;border-radius:99px}
+.gx-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem}.gx-two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.gx-card{background:#fff;color:#14202f;border:1px solid rgba(20,32,47,.1);border-radius:18px;padding:1.3rem;margin:0;display:flex;flex-direction:column;gap:.6rem}
+body.dark .gx-card{background:#151e2d;color:#e8eef7;border-color:rgba(255,255,255,.1)}
+.gx-card h3{margin:0}.gx-card ul{margin:0;padding-inline-start:1.1rem;opacity:.85}.gx-card footer{opacity:.7;font-size:.88rem}
+.gx-tag{align-self:flex-start;background:#e8eef7;color:#1f3a5f;border-radius:99px;padding:.15rem .7rem;font-size:.8rem;font-weight:700}
+.gx-row{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin-top:auto}.gx-stars{color:#e0a100;letter-spacing:2px}
+.gx-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}.gx-tabs button{border:1px solid #1f3a5f;background:transparent;color:inherit;border-radius:99px;padding:.45rem 1.1rem;cursor:pointer;font:inherit}
+.gx-tabs button.on{background:#1f3a5f;color:#fff}.gx-guide{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem}
+.gx-guide li{background:rgba(31,58,95,.08);border-radius:14px;padding:1rem}
+.gx-form{display:grid;gap:.6rem}.gx-form input,.gx-form select{padding:.7rem;border-radius:10px;border:1px solid rgba(20,32,47,.2);font:inherit;background:transparent;color:inherit}
+.gx-modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:grid;place-items:center;z-index:999;padding:1rem}.gx-modal[hidden]{display:none}
+.gx-modal-card{position:relative;background:#fff;color:#14202f;border-radius:20px;padding:1.6rem;max-width:420px;width:100%}
+body.dark .gx-modal-card{background:#151e2d;color:#e8eef7}.gx-modal-card .close-btn{position:absolute;top:.6rem;inset-inline-start:.6rem}
+.gx-bar{display:none}
+@media(max-width:768px){body{padding-bottom:64px}.gx-bar{display:flex;position:fixed;inset-inline:0;bottom:0;background:#0d1420;z-index:90;padding-bottom:env(safe-area-inset-bottom,0)}
+.gx-bar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:.55rem 0;color:#fff;text-decoration:none;font-size:1.1rem}.gx-bar span{font-size:.7rem}}

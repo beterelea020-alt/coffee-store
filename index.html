@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1420" />
+  <meta name="description" content="متجر قهوة مصري عصري — اكتشف البن، اختر الوزن والطحن، وأكمل طلبك بسهولة." />
+  <meta property="og:title" content="RAW Coffee — قهوتك على مزاجك" />
+  <meta property="og:description" content="متجر قهوة عربي حديث بتجربة شراء كاملة." />
+  <meta property="og:type" content="website" />
+  <title>RAW Coffee — قهوتك على مزاجك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="upgrade.css" />
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="growth.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%98%95%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="announcement" id="announcement">
+    <div><b>عرض الافتتاح:</b> الشحن مجاني للطلبات من 600 ج — اطلب الآن بسهولة</div>
+    <button id="announcementClose" aria-label="إغلاق الشريط">×</button>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">☰</button>
+      <a href="#home" class="brand" aria-label="RAW Coffee">
+        <span class="brand-mark">R</span>
+        <span class="brand-copy"><strong>RAW</strong><small>COFFEE HOUSE</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#shop">المتجر</a>
+        <a href="#collections">المجموعات</a>
+        <a href="#why-us">ليه إحنا؟</a>
+        <a href="#faq">الأسئلة</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="بحث">⌕</button>
+        <button class="icon-btn" id="themeBtn" aria-label="تغيير الوضع">◐</button>
+        <button class="cart-btn" id="cartBtn" aria-label="فتح السلة"><span>السلة</span><b id="cartCount">0</b></button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#home">الرئيسية</a>
+      <a href="#shop">المتجر</a>
+      <a href="#collections">المجموعات</a>
+      <a href="#why-us">ليه إحنا؟</a>
+      <a href="#faq">الأسئلة</a>
+      <a href="#contact">تواصل</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=88" alt="كوب قهوة طازجة" fetchpriority="high" loading="eager" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="eyebrow">EGYPTIAN COFFEE • ROASTED WITH CARE</div>
+        <h1>اختار البن.<br><em>واحنا نهتم بالباقي.</em></h1>
+        <p>بن سادة، محوج، فرنسي، إسبريسو وقهوة عربية — بأوزان وطحنات مختلفة وتجربة طلب معمولة للسوق المصري.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#shop">اشتري قهوتك <span>←</span></a>
+          <button class="ghost-light" id="findCoffeeBtn">ساعدني أختار</button>
+        </div>
+        <div class="hero-note"><span>✓</span> شحن داخل مصر <span>•</span> <span>✓</span> طلب سريع عبر واتساب</div>
+      </div>
+      <a class="hero-scroll" href="#collections">انزل لاستكشاف المتجر ↓</a>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span class="trust-icon">◉</span><div><strong>تحميص طازج</strong><small>Freshly roasted</small></div></div>
+        <div><span class="trust-icon">▣</span><div><strong>أوزان متعددة</strong><small>250g • 500g • 1kg</small></div></div>
+        <div><span class="trust-icon">⌁</span><div><strong>اختيار الطحن</strong><small>حسب طريقة التحضير</small></div></div>
+        <div><span class="trust-icon">↗</span><div><strong>طلب سهل</strong><small>واتساب + Checkout</small></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow dark">SHOP BY MOOD</span><h2>اختار مزاجك</h2></div>
+          <p>بدل ما العميل يحتار، خليه يدخل من الباب اللي يناسبه: نوع البن، درجة التحميص، أو طريقة التحضير.</p>
+        </div>
+        <div class="collection-grid" id="collectionGrid"></div>
+      </div>
+    </section>
+
+    <section class="section soft-band">
+      <div class="container finder-card" id="coffeeFinder">
+        <div class="finder-copy">
+          <span class="eyebrow dark">COFFEE FINDER</span>
+          <h2>مش عارف تختار؟<br><em>جاوب 3 أسئلة.</em></h2>
+          <p>هنقترح عليك منتجات من الكتالوج حسب ذوقك وطريقة تحضيرك.</p>
+        </div>
+        <div class="finder-form" id="finderForm">
+          <label>بتحب القهوة إزاي؟<select id="finderTaste"><option value="balanced">متوازنة</option><option value="strong">قوية</option><option value="smooth">ناعمة</option><option value="spiced">محوجة</option></select></label>
+          <label>بتحضّرها إزاي؟<select id="finderBrew"><option value="turkish">تركي / سادة</option><option value="espresso">إسبريسو</option><option value="arabic">عربية</option><option value="french">فرنسي</option></select></label>
+          <label>الوزن المناسب ليك؟<select id="finderWeight"><option value="250">250 جرام</option><option value="500">500 جرام</option><option value="1000">1 كيلو</option><option value="any">أي وزن</option></select></label>
+          <button class="btn btn-dark" id="finderSubmit">وريني الترشيحات <span>←</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="shop">
+      <div class="container">
+        <div class="section-head shop-head">
+          <div><span class="eyebrow dark">THE STORE</span><h2>المنتجات</h2></div>
+          <div class="shop-tools">
+            <div class="search-wrap"><input id="productSearch" type="search" placeholder="ابحث عن قهوتك..." autocomplete="off" /><span>⌕</span></div>
+            <select id="sortSelect" aria-label="ترتيب المنتجات">
+              <option value="featured">الأكثر شعبية</option>
+              <option value="price-asc">السعر: الأقل أولاً</option>
+              <option value="price-desc">السعر: الأعلى أولاً</option>
+              <option value="name">الاسم</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-row" id="filterRow"></div>
+        <div class="shop-layout">
+          <aside class="filter-panel">
+            <div class="filter-card">
+              <div class="filter-title">فلتر السعر</div>
+              <div class="price-inputs"><input id="minPrice" type="number" min="0" placeholder="من"><input id="maxPrice" type="number" min="0" placeholder="إلى"></div>
+              <button id="applyPrice" class="btn btn-dark full">تطبيق</button>
+              <button id="resetFilters" class="clear-btn">مسح الفلاتر</button>
+            </div>
+            <div class="filter-card tip-card">
+              <div class="tip-title">اختيار الطحن</div>
+              <p>في صفحة المنتج، العميل يقدر يحدد الطحن قبل الإضافة للسلة: تركي، فلتر، إسبريسو أو حبوب كاملة.</p>
+            </div>
+            <div class="filter-card shipping-card">
+              <div class="shipping-icon">↗</div>
+              <strong>شحن مجاني</strong>
+              <span>للطلبات الأعلى من 600 ج</span>
+            </div>
+          </aside>
+          <div class="shop-results">
+            <div class="results-meta"><span id="resultsCount">0 منتج</span><button id="compactFilterBtn" class="mobile-filter-btn">الفلاتر ⌄</button></div>
+            <div class="product-grid" id="productGrid"></div>
+            <div class="empty-state" id="emptyState" hidden>مفيش منتجات مطابقة حاليًا. جرّب تشيل فلتر أو تغيّر البحث.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-band" id="why-us">
+      <div class="container why-grid">
+        <div>
+          <span class="eyebrow">WHY RAW</span>
+          <h2>تجربة شراء،<br><em>مش مجرد كتالوج.</em></h2>
+          <p>المتجر معمول عشان يحول الزيارة لطلب: منتجات واضحة، اختيار وزن وطحن، سلة ذكية، شحن، كوبون، وطلب واتساب جاهز.</p>
+          <a class="btn btn-light" href="#shop">ابدأ التسوق</a>
+        </div>
+        <div class="feature-stack">
+          <article><span>01</span><div><h3>قرار شراء أسرع</h3><p>فلترة وبحث وترشيحات تقلل وقت الاختيار.</p></div></article>
+          <article><span>02</span><div><h3>سلة متحركة</h3><p>تحديث الكميات ومتابعة الحد المجاني للشحن لحظيًا.</p></div></article>
+          <article><span>03</span><div><h3>Checkout مصمم لمصر</h3><p>المحافظة، المنطقة، طريقة الدفع، وملاحظات التوصيل.</p></div></article>
+          <article><span>04</span><div><h3>WhatsApp Ready</h3><p>الطلب يتحول لرسالة منظمة جاهزة لفريق المبيعات.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section">
+      <div class="container story-grid">
+        <div class="story-image"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=88" alt="تحضير القهوة" loading="lazy"><div class="story-badge">BREW<br><strong>BETTER</strong></div></div>
+        <div class="story-copy">
+          <span class="eyebrow dark">THE BRAND STORY</span>
+          <h2>قهوة مصرية بروح عصرية.</h2>
+          <p>قسم القصة هنا متصمم عشان العميل يفهم الفرق: نوع البن، التحميص، طريقة التحضير، والعناية بالتغليف — كل ده بدون كلام تسويقي مبالغ فيه.</p>
+          <div class="story-points"><div><strong>01</strong><span>حبوب مختارة</span></div><div><strong>02</strong><span>تحميص مضبوط</span></div><div><strong>03</strong><span>تجربة طلب سهلة</span></div></div>
+          <a class="outline-link" href="#faq">اعرف أكتر عن الطلب والشحن ←</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-head compact"><div><span class="eyebrow dark">FAQ</span><h2>أسئلة قبل الطلب</h2></div><p>المحتوى هنا قابل للتعديل من نفس ملف البيانات عند تجهيز الموقع للعميل النهائي.</p></div>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <div><span class="eyebrow dark">NEED HELP?</span><h2>عايز ترشيح؟<br><em>كلّمنا مباشرة.</em></h2><p>ممكن العميل يسأل عن النوع، الطحن، الوزن أو أي حاجة تخص الطلب قبل الدفع.</p></div>
+        <div class="contact-actions">
+          <a class="contact-big" id="contactWhatsapp" target="_blank" rel="noopener"><span>واتساب</span><strong>ابدأ محادثة ↗</strong></a>
+          <a class="contact-big" href="tel:+201224886344"><span>الهاتف</span><strong>01224886344 — 01550870190</strong></a>
+          <a class="contact-big" href="mailto:beterelea@020gmail.com"><span>البريد</span><strong>beterelea@020gmail.com</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><div class="brand"><span class="brand-mark">R</span><span class="brand-copy"><strong>RAW</strong><small>COFFEE HOUSE</small></span></div><p>قهوتك على مزاجك.</p></div>
+      <div><h4>المتجر</h4><a href="#shop">كل المنتجات</a><a href="#collections">التصنيفات</a><a href="#shop">الأكثر شعبية</a></div>
+      <div><h4>خدمة العملاء</h4><a href="#faq">الأسئلة الشائعة</a><a href="#contact">تواصل معنا</a><a href="#" data-policy="returns">سياسة الاستبدال</a><a href="#" data-policy="shipping">الشحن والتوصيل</a><a href="#" data-policy="privacy">الخصوصية</a></div>
+      <div><h4>تابعنا</h4><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="TikTok">TikTok</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> RAW Coffee House</span><span>Built for a premium Egyptian coffee store experience.</span></div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay" hidden>
+    <div class="search-box"><button class="close-btn" id="closeSearch">×</button><span class="eyebrow dark">SEARCH</span><h3>بتدور على إيه؟</h3><input id="globalSearch" placeholder="اسم المنتج، الفئة أو طريقة التحضير..." autocomplete="off" /></div>
+  </div>
+
+  <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><span class="eyebrow dark">YOUR CART</span><h3>سلتك</h3></div><button class="close-btn static-close" id="closeCart">×</button></div>
+    <div class="cart-content" id="cartContent"></div>
+    <div class="drawer-footer">
+      <div class="shipping-progress" id="shippingProgress"></div>
+      <div class="coupon-row"><input id="couponInput" placeholder="كود الخصم"><button id="couponBtn">تطبيق</button></div>
+      <div class="total-row"><span>الإجمالي الفرعي</span><strong id="cartSubtotal">0 ج.م</strong></div>
+      <div class="total-row discount" id="discountRow" hidden><span><span id="discountLabel"></span> <button type="button" class="link-btn" id="removeCoupon">إلغاء</button></span><strong id="cartDiscount"></strong></div>
+      <div class="total-row muted"><span>الشحن</span><strong id="cartShipping">0 ج.م</strong></div>
+      <div class="total-row grand"><span>الإجمالي</span><strong id="cartTotal">0 ج.م</strong></div>
+      <button class="btn btn-dark full" id="checkoutBtn">إتمام الطلب</button>
+      <small>الدفع النهائي يتم حسب طرق الدفع المتاحة للمتجر.</small>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal" hidden>
+    <div class="modal-card product-modal">
+      <button class="close-btn modal-close" id="closeProductModal">×</button>
+      <div class="product-modal-grid">
+        <div class="modal-product-image"><img id="modalImage" alt=""></div>
+        <div class="modal-product-info">
+          <span class="eyebrow dark" id="modalCategory"></span>
+          <h3 id="modalName"></h3>
+          <div class="rating-row"><span>★★★★★</span><small>تفاصيل المنتج قابلة للتعديل</small></div>
+          <div class="modal-price" id="modalPrice"></div>
+          <p id="modalDescription"></p>
+          <div class="option-block"><label>الوزن</label><div class="option-list" id="weightOptions"></div></div>
+          <div class="option-block"><label>درجة التحميص</label><div class="option-list" id="roastOptions"></div></div>
+          <div class="option-block"><label>الطحنة</label><select id="grindSelect"><option>تركي ناعم</option><option>تركي وسط</option><option>فلتر</option><option>إسبريسو</option><option>حبوب كاملة</option></select></div>
+          <div class="modal-add-row"><div class="qty-control large"><button id="modalMinus">−</button><span id="modalQty">1</span><button id="modalPlus">+</button></div><button class="btn btn-dark" id="modalAdd">أضف للسلة</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal" hidden>
+    <div class="modal-card checkout-modal">
+      <button class="close-btn modal-close" id="closeCheckout">×</button>
+      <span class="eyebrow dark">CHECKOUT</span><h3>كمّل بيانات الطلب</h3><p class="checkout-lead">البيانات دي هتتستخدم لبناء طلب واضح لفريق المبيعات.</p>
+      <form id="checkoutForm">
+        <div class="form-grid"><label>الاسم الكامل<input required name="name" placeholder="مثال: أحمد محمد"></label><label>رقم الموبايل<input required name="phone" inputmode="tel" placeholder="01xxxxxxxxx"></label></div>
+        <div class="form-grid"><label>المحافظة<select required name="city"><option value="">اختار المحافظة</option><option>الدقهلية</option><option>دمياط</option><option>القاهرة</option><option>الجيزة</option><option>الإسكندرية</option><option>الشرقية</option><option>الغربية</option><option>القليوبية</option><option>المنوفية</option><option>البحيرة</option><option>كفر الشيخ</option><option>بورسعيد</option><option>الإسماعيلية</option><option>السويس</option><option>الفيوم</option><option>بني سويف</option><option>المنيا</option><option>أسيوط</option><option>سوهاج</option><option>قنا</option><option>الأقصر</option><option>أسوان</option><option>شمال سيناء</option><option>جنوب سيناء</option><option>البحر الأحمر</option><option>مطروح</option><option>الوادي الجديد</option></select></label></div>
+        <label>العنوان بالتفصيل<input required name="address" placeholder="المنطقة، الشارع، رقم العقار، الدور"></label>
+        <div class="form-grid"><label>طريقة الدفع<select name="payment"><option value="cod">الدفع عند الاستلام</option><option value="transfer">تحويل بنكي</option><option value="whatsapp">تأكيد واتساب أولاً</option></select></label><label>موعد مناسب للتوصيل<select name="delivery"><option>أي وقت</option><option>صباحًا</option><option>ظهرًا</option><option>مساءً</option></select></label></div>
+        <label>ملاحظات الطلب<textarea name="notes" rows="3" placeholder="مثال: الاتصال قبل الوصول / بدون سكر / رقم باب العمارة..."></textarea></label>
+        <div class="checkout-summary"><div><span>المنتجات</span><strong id="checkoutItemsCount">0</strong></div><div><span>الإجمالي</span><strong id="checkoutTotal">0 ج.م</strong></div></div>
+        <button class="btn btn-whatsapp full" type="submit">تأكيد الطلب وفتح واتساب ↗</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="finderModal" hidden>
+    <div class="modal-card finder-results-modal">
+      <button class="close-btn modal-close" id="closeFinder">×</button>
+      <span class="eyebrow dark">YOUR PICKS</span><h3>الترشيحات اللي تناسبك</h3><div class="product-grid mini-grid" id="finderResults"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="backend.js"></script>
+  <script src="coupons.js"></script>
+  <script src="script.js"></script>
+  <script src="upgrade.js"></script>
+  <script src="auth.js"></script>
+  <script src="shop.js"></script>
+  <script src="checkout.js"></script>
+  <script src="growth.js"></script>
+  <script src="content.js"></script>
+</body>
+</html>
